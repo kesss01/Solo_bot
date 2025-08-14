@@ -365,7 +365,7 @@ async def handle_about_vpn(callback_query: CallbackQuery, session: AsyncSession)
     builder.row(InlineKeyboardButton(text=BACK, callback_data=back_target))
 
     text = get_about_vpn("3.2.3-minor")
-    image_path = os.path.join("img", "pic.jpg")
+    image_path = os.path.join("img", "about.jpg")
 
     await edit_or_send_message(
         target_message=callback_query.message,
